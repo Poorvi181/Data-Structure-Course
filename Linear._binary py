@@ -1,0 +1,40 @@
+numbers = [10,25,20,30,45,50]
+
+target = int(input("Enter Target number: "))
+
+found = False
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        print("Element found at the index: ", i)
+        found = True
+        break
+
+if not found:
+    print("Element not found!")
+
+#BINARY
+
+sortedlist = [10,20,30,40,50,60]
+target2 = int(input("Enter target number: "))
+
+low = 0
+
+high = len(sortedlist)-1
+found2 = False
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if sortedlist[mid] == target2:
+        print("Element found at index: ",mid)
+        found = True
+        break
+
+    elif target2 < sortedlist[mid]:
+        high = mid-1
+
+    else:
+        low = mid+1
+
+if not found2:
+    print("Element not found!")
