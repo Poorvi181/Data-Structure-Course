@@ -1,0 +1,25 @@
+body{
+    background: #D95F7B;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    margin-left: 150px;
+}
+
+main p{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    background: #e694ff;
+}
